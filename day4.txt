@@ -1,12 +1,14 @@
+import io.javalin.Javalin;				//imports Javalin
 public class Main {
 	public static void main(String[] args) {
-		Javalin app = Javalin.create();
+		Javalin app = Javalin.create();		//Javalin object created and called
 
-		app.start();
+		app.start();						//initiates the listening process for http requests
 
-		app.get("foods", ctx -> {
-			Food myFood = new Food("carrots", "vegetable");
-			ctx.result("You got: " + myFood.name);
+		app.get("foods", ctx -> {			//callback function for get request
+			Food myFood = new Food("carrots", "vegetable"); //constructor that specifies how the object "food" is initialized
+			ctx.result("You got: " + myFood.name);			//results would be displayed on the webpage
 		});
 	}
 }
+//This program is meant to print the food values on a http webpage using Javalin
