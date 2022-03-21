@@ -17,7 +17,7 @@ public static String[] getFoodTypes() {
 public static String[] getFoodsByType(String type) {
 	String[] foods = new String[3];
 
-	switch(type) {
+	switch(type) {						//Switch statement for food options
 	case "breakfast":
 		foods[0] = "pancakes";
 		foods[1] = "cereal";
