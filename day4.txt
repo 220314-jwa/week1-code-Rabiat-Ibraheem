@@ -1,7 +1,7 @@
 import io.javalin.Javalin;				//imports Javalin
 public class Main {
 	public static void main(String[] args) {
-		Javalin app = Javalin.create();		//The Javalin object created and called
+		Javalin app = Javalin.create();		//The Javalin object is created and called
 
 		app.start();						//initiates the listening process for http requests
 
