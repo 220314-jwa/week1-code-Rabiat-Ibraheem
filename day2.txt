@@ -10,7 +10,7 @@ public static void main(String[] args) {
 }
 
 public static String[] getFoodTypes() {
-	String[] foodTypes = {"breakfast","lunch","dinner","dessert","snack"};
+	String[] foodTypes = {"breakfast","lunch","dinner","dessert","snack"};  //array for type of food
 	return foodTypes;
 }
 
@@ -44,9 +44,14 @@ public static String[] getFoodsByType(String type) {
 		foods[2] = "samosa";
 		break;
 	default:
-		// add your own
+			System.out.println("Please enter a valid food type"); //line added by Rabiat Ibraheem
 		break;
 	}
 
 	return foods;
 }
+
+/*This program is set to print out food options based on the appropriate food type
+* The food types are listed in an array and the food options are provided in a switch statement
+*I think the program might be missing a user input line because it just prints out a food list 
+*by default*/
