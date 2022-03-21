@@ -1,24 +1,26 @@
-public class Food {
-	public String name;
-	public String type;
+public class Food {							//new public class named Food
+	public String name;						//new string variable created
+	public String type;						//new string variable created
 
-	public Food(String name, String type) {
-		this.name = name;
-		this.type = type;
+	public class Food(String name, String type) {	//added the word 'class', method overloading
+		this.name = name;					//referencing predefined variable name
+		this.type = type;					//referencing predefined variable type
 	}
 
-	public void cook() {
-		if (!name.contains("cooked")) {
-			name = "cooked " + name;
+	public static void cook() {			
+		if (!name.contains("cooked")) {		//if the input does not contain the word "cooked"
+			name = "cooked " + name;		//the system adds it by default
 		}
 	}
 }
 
 public class Main {
-	public static void main(String[] args) {
-		Food myFood = new Food("potato", "vegetable");
-		myFood.cook();
+	public static void main(String[] args) {			//main static method
+		Food myFood = new Food("potato", "vegetable");	//constructor passed to a variable argument
+		myFood.cook();									//return value
 
-		System.out.println(myFood.name);
+		System.out.println(myFood.name);	//print statement
 	}
+
 }
+// The program is supposed to print one of the two values stored under the "food" object
