@@ -1,13 +1,13 @@
-int score = 80;
+int score = 80; //the value of the variable"score" is set to 80
 
 String result;
 
 if (score == 80) {
-	result = "You passed!";
+	result = "You passed!"; 		//if the value entered = 80, the console displays this message
 } else if (score > 80) {
-	result = "You did great!";
+	result = "You did great!";		//if the is greater than 80, the console displays this message
 } else {
-	result = "You did not pass. Try again!";
+	result = "You did not pass. Try again!";  //if the value entered is != or greater than 80, the console displays this message
 }
 
 System.out.println(result);
