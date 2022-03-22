@@ -2,7 +2,7 @@ public class Food {							//new public class named Food
 	public String name;						//new string variable created
 	public String type;						//new string variable created
 
-	public class Food(String name, String type) {	//added the word 'class', method overloading
+	public Food(String name, String type) {	//Reassigning the keyword 
 		this.name = name;					//referencing predefined variable name
 		this.type = type;					//referencing predefined variable type
 	}

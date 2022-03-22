@@ -19,23 +19,23 @@ public static String[] getFoodsByType(String type) {
 
 	switch(type) {						//Switch statement for food options
 	case "breakfast":
-		foods[0] = "pancakes";
+		foods[0] = "pancakes";			//Arraylist containing indexes for each food option under the foodType(case)
 		foods[1] = "cereal";
 		foods[2] = "omelette";
 		break;
 	case "lunch":
 		foods[0] = "sandwich";
-		foods[1] = "salad";
+		foods[1] = "salad";				//Arraylist containing indexes for each food option under the foodType(case)
 		foods[2] = "soup";
 		break;
 	case "dinner":
 		foods[0] = "curry";
-		foods[1] = "stir fry";
+		foods[1] = "stir fry";			//Arraylist containing indexes for each food option under the foodType(case)
 		foods[2] = "burger";
 		break;
 	case "dessert":
 		foods[0] = "cake";
-		foods[1] = "ice cream";
+		foods[1] = "ice cream";			//Arraylist containing indexes for each food option under the foodType(case)
 		foods[2] = "candy";
 		break;
 	case "snack":

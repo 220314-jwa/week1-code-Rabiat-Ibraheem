@@ -1,25 +1,28 @@
 <html>
-	<head>
-		<title>Daily Code Review</title>
+	<head>									
+		<title>Daily Code Review</title>		<!-- Page title that is displayed in the address bar -->
 	</head>
 	<body>
-		<h1>Cook your food!</h1>
-		<form action="http://localhost:8080/cook">
-			<label for="foodName">Food Name:</label>
-			<input id="foodName" name="foodName" type="text">
-			<br>
-			<button type="submit">Submit</button>
-		</form>
-	</body>
+		<h1>Cook your food!</h1>							<!--main heading	-->
+		<form action="http://localhost:8080/cook">			<!--form tag for user input, it specifies the location where the data is stored 	-->
+			<label for="foodName">Food Name:</label>			<!--defines the text label foodName to hold input values	-->
+			<input id="foodName" name="foodName" type="text">	<!--creates a textbox for the user to input values under the foodName label	-->
+			<br>												<!--line break	-->
+			<button type="submit">Submit</button>		<!--button to submit the input	-->
+		</form>											<!--closing the form tag	-->
+	</body>												<!--closing tag for the body section	-->
 </html>
 
 public static void main(String[] args) {
-	Javalin app = Javalin.create();
-	app.start();
+	Javalin app = Javalin.create();			//The Javalin object is created and called
+	app.start();							//initiates the listening process for http requests
 
-	app.get("cook", ctx -> {
+	app.get("cook", ctx -> {					//callback for get requests
 		String foodSent = ctx.formParam("foodName");
 		String cookedFood = "cooked " + foodSent;
 		ctx.result("Here's your food! <br>" + cookedFood);
 	});
 }
+//This program uses javalin and html to setup a forms webpage.The user inputs 
+//data about a specific foodname into a text box and an output statement is generated
+//based on the input. The information is stored locally
